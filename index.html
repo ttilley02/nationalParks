@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks Finder</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Find National Parks!</h1>
+
+       
+        <form id="js-form" class="search-form css-search">
+            <section>
+            <label id="search-label" for="stateCode">Enter a two Character state code!</label>
+            <input type="text" name="state" class="js-state"  required>
+             </section>
+             <section>    
+            <label id="search-label" for="username">Limit my results to:</label>
+            <input type="text" name="maxCount" class="js-maxCount">
+            </section>    
+            <button type="submit" id="find-btn" class="css-search">Search</button>
+        </form>
+        
+        </section>
+         
+        </form>
+        <main>
+            <div class="flex-container">
+                <section class="js-results results hidden"></section>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
