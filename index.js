@@ -7,8 +7,8 @@ function displayResults(responseJson) {
     })
 
     console.log(responseJson);
+    if(responseJson.total != 0){
     for(let i = 0; i < responseJson.data.length;i++){
-    //console.log(responseJson);
     console.log(responseJson.data[i].fullName);
      $('.js-results').append(`
      
@@ -19,6 +19,14 @@ function displayResults(responseJson) {
      <br>
     
     `)
+    }
+    }
+    else
+    {
+     $('.js-results').append(`
+     
+     <div class="result-title">NO RESULTS! Please try again</div>        
+    `) 
     }
  
     $('.js-results').removeClass('hidden')
